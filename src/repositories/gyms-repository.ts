@@ -6,7 +6,7 @@ export interface FindManyNearbyParams {
 
 export interface GymsRepository {
   findById(id: string): Promise<Gym | null>
-  seachMany(query: string, page: number): Promise<Gym[]>
+  searchMany(query: string, page: number): Promise<Gym[]>
   findManyNearby(params: FindManyNearbyParams): Promise<Gym[]>
   create(data: Prisma.GymCreateInput): Promise<Gym>
 }
