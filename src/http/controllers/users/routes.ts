@@ -5,7 +5,7 @@ import { register } from '@/http/controllers/users/register'
 
 import { verifyJWT } from '@/http/middlewares/verify-jwt'
 
-export async function appRoutes(app: FastifyInstance) {
+export async function usersRoutes(app: FastifyInstance) {
   app.post('/users', register)
   app.post('/sessions', authenticate)
 
